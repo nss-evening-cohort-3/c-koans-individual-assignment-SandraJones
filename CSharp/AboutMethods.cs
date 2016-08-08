@@ -41,7 +41,7 @@ namespace DotNetKoans.CSharp
         [Koan(1)]
         public void LocalMethodsWithVariableParams()
         {
-            Assert.Equal(FILL_ME_IN, LocalMethodWithVariableParameters("Cory", "Will", "Corey"));
+            Assert.Equal(new String[]{ "Cory", "Will", "Corey"}, LocalMethodWithVariableParameters("Cory", "Will", "Corey"));
         }
 
         //Note how we called the method by saying "this.LocalMethodWithVariableParameters"
@@ -50,7 +50,7 @@ namespace DotNetKoans.CSharp
         [Koan(2)]
         public void LocalMethodsWithoutExplicitReceiver()
         {
-            Assert.Equal(FILL_ME_IN, LocalMethodWithVariableParameters("Cory", "Will", "Corey"));
+            Assert.Equal(new String[] { "Cory", "Will", "Corey" }, LocalMethodWithVariableParameters("Cory", "Will", "Corey"));
         }
 
         //Extension Methods allow us to "add" methods to any class
